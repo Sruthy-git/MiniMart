@@ -1,0 +1,15 @@
+/* src/App.css */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 24px auto 56px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

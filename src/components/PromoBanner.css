@@ -1,0 +1,47 @@
+/* src/components/PromoBanner.css */
+.promo-banner {
+  border-radius: 18px;
+  background: linear-gradient(120deg, #556b2f, #8f9779);
+  color: #ffffff;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.promo-copy h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.promo-copy p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+  max-width: 420px;
+}
+
+.promo-cta {
+  border-radius: 999px;
+  border: none;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #556b2f;
+  background-color: #f5f4f0;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.promo-cta:hover {
+  background-color: #ffffff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .promo-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

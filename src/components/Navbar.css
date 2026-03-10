@@ -1,0 +1,164 @@
+/* NAVBAR CONTAINER */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background: #2F3E1F; /* Updated olive green background */
+  position: relative;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+
+.logo img {
+  height: 42px;
+}
+
+/* SEARCH BAR */
+
+.search {
+  width: 420px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* MENU LINKS */
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white; /* white text for dark navbar */
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #cfd8b5;
+}
+
+/* CART BUTTON */
+
+.cart-btn {
+  padding: 6px 14px;
+  border: none;
+  background: #556B2F;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-btn:hover {
+  background: #6b8c3f;
+}
+
+/* CART AREA */
+
+.cart-area {
+  position: relative;
+}
+
+/* CART DROPDOWN */
+
+.cart-dropdown {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  width: 260px;
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 2000;
+}
+
+/* EMPTY TEXT */
+
+.empty {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+
+/* CART ITEM */
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* QUANTITY BUTTONS */
+
+.qty {
+  display: flex;
+  align-items: center;
+}
+
+.qty button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: #343534;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.qty span {
+  margin: 0 6px;
+  font-size: 13px;
+}
+
+/* TOTAL */
+
+.cart-total {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .cart-area {
+    display: flex;
+    justify-content: center;
+  }
+
+}
