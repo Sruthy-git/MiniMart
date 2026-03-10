@@ -1,4 +1,4 @@
-/// src/components/HeroBanner.jsx
+// src/components/HeroBanner.jsx
 import "./HeroBanner.css";
 
 function HeroBanner() {
@@ -39,11 +39,11 @@ function HeroBanner() {
 
         {/* RIGHT SIDE SALE BANNER */}
         <div className="hero-media">
-              <img
-  className="hero-main-image"
-  src="/salebanner.jpg" // <-- public folder
-  alt="Super Summer Sale"
-/>
+          <img
+            className="hero-main-image"
+            src="/salebanner.jpg"  // from public folder
+            alt="Super Summer Sale"
+          />
 
           <div className="hero-badge hero-badge-discount">
             <span>Super Summer SALE</span>
