@@ -1,6 +1,6 @@
 // src/components/HeroBanner.jsx
 import "./HeroBanner.css";
-import saleBanner from "../assets/salebanner.jpg";
+import saleBanner from '../assets/salebanner.jpg'
 
 function HeroBanner() {
   return (
