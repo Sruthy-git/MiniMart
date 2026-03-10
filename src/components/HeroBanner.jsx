@@ -1,21 +1,19 @@
-// src/components/HeroBanner.jsx
+/// src/components/HeroBanner.jsx
 import "./HeroBanner.css";
-import saleBanner from '../assets/salebanner.jpg'
 
 function HeroBanner() {
   return (
     <section className="hero" id="deals">
-
       <div className="hero-content">
 
+        {/* LEFT SIDE TEXT */}
         <div className="hero-copy">
           <span className="hero-pill">Weekend Mega Sale</span>
 
-          <h1>Super Summer Sale,Flat 50% Offer.</h1>
+          <h1>Super Summer Sale, Flat 50% Offer.</h1>
 
           <p>
-           MiniMart is a one-stop online store offering quality kitchen essentials, stylish home décor, trendy dresses, and elegant watches at great prices.
-
+            MiniMart is a one-stop online store offering quality kitchen essentials, stylish home décor, trendy dresses, and elegant watches at great prices.
           </p>
 
           <div className="hero-cta-row">
@@ -28,12 +26,10 @@ function HeroBanner() {
               <strong>5000+</strong>
               <span>Products</span>
             </div>
-
             <div>
               <strong>30 min</strong>
               <span>Avg delivery</span>
             </div>
-
             <div>
               <strong>4.8</strong>
               <span>Customer rating</span>
@@ -43,10 +39,9 @@ function HeroBanner() {
 
         {/* RIGHT SIDE SALE BANNER */}
         <div className="hero-media">
-
-          <img
+              <img
   className="hero-main-image"
-  src={saleBanner}
+  src="/salebanner.jpg" // <-- public folder
   alt="Super Summer Sale"
 />
 
@@ -59,7 +54,6 @@ function HeroBanner() {
             <span>Limited time</span>
             <strong>Shop now</strong>
           </div>
-
         </div>
 
       </div>
